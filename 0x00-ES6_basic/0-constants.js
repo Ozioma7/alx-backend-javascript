@@ -1,13 +1,13 @@
 function taskFirst() {
-    const a = 5;
-    const b = 10;
-    const sum = a + b;
-    console.log(sum);
+    const x = 5,
+          y = 10,
+          product = x * y;
+    console.log(product);
 }
 
 function taskNext() {
-    let x = 5;
-    let y = 10;
-    let product = x * y;
+    let x = 5,
+          y = 10,
+          product = x * y;
     console.log(product);
 }
