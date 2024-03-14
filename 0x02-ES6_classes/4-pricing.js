@@ -1,9 +1,9 @@
-import Currency from "./3-currency";
+import Currency from './3-currency';
 
 export default class Pricing {
   constructor(ampount, currency) {
     if (!currency instanceof Currency) {
-      throw new Error('currency should be of type Currency')
+      throw new Error('currency should be of type Currency');
     }
 
     this._amount = amount;
