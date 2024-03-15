@@ -1,11 +1,8 @@
-import Currency from './3-currency';
+/* eslint-disable-next-line */
+import Currency from './3-currency.js';
 
 export default class Pricing {
-  constructor(ampount, currency) {
-    if (!currency instanceof Currency) {
-      throw new Error('currency should be of type Currency');
-    }
-
+  constructor(amount, currency) {
     this._amount = amount;
     this._currency = currency;
   }

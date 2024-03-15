@@ -10,8 +10,8 @@ export default class EVCar extends Car {
     return this._range;
   }
 
+  // eslint-disable-next-line
   cloneCar() {
-    // Create a new Car instance instead of EVCar
-    return new Car(this._brand, this._motor, this._color);
+    return new Car[Symbol.species]();
   }
 }
