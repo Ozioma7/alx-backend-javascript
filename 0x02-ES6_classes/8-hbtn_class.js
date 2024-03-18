@@ -4,9 +4,29 @@ export default class HolbertonClass {
     this._location = location;
   }
 
-  [Symbol.toPrimitive](dataType) {
-    if (dataType === 'number') return this._size;
-    if (dataType === 'string') return this._location;
-    return undefined;
+  get size() {
+    return this._size;
+  }
+
+  set size(value) {
+    this._size = value;
+  }
+
+  get location() {
+    return this._location;
+  }
+
+  set location(value) {
+    this._location = value;
+  }
+
+  // The valueOf() method is called when cast to a number
+  valueOf() {
+    return this._size;
+  }
+
+  // The toString() method is called when cast to a string
+  toString() {
+    return this._location;
   }
 }
