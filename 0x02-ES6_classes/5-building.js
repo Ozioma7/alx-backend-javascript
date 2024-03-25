@@ -1,4 +1,3 @@
-
 export default class Building {
   constructor(sqft) {
     if (
@@ -16,4 +15,3 @@ export default class Building {
     return this._sqft;
   }
 }
-
